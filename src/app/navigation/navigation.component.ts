@@ -10,6 +10,7 @@ export class NavigationComponent implements OnInit {
   myimage3:string="assets/images/cricket.png";
   myimage4:string="assets/images/group.png";
   myimage5:string="assets/images/Matchesicon.jpg";
+  myimage1:string="assets/images/Cricmaza Logo.png";
   constructor() { }
 
   ngOnInit(): void {
