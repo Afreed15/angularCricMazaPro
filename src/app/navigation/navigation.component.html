@@ -1,23 +1,28 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" routerLink="/"><b>IPL</b></a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+     
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-white">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/teams">Teams</a>
+            <a class="nav-link active text-white" aria-current="page" routerLink="/teams">
+                <img [src]=myimage3 height="30" width="30"  ><b>Teams</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/players">Players</a>
+            <a class="nav-link text-white" routerLink="/players">
+                <img [src]=myimage2 height="30" width="30"  ><b>players</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/players-profile">PlayersProfile</a>
+            <a class="nav-link text-white" routerLink="/players-profile">
+                <img [src]=myimage4 height="30" width="30"  ><b>PlayersProfile</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/points-table">PointsTable</a>
+            <a class="nav-link text-white" routerLink="/points-table">
+                <img [src]=myimage5 height="30" width="30"  ><b>PointsTable</b></a>
           </li>
           
         </ul>
