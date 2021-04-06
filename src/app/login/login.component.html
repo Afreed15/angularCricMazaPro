@@ -1,17 +1,45 @@
-<form #form="ngForm">
-    
-    <div class="mb-3">
-      <label for="Username" class="form-label">Username</label>
-      <input type="text" name="Username" class="form-control"  >
-    </div>
-    <div class="mb-3">
-        <label for="UserPwd" class="form-label">UserPwd</label>
-        <input type="text" name="UserPwd" class="form-control" >
+<div class="container">
+  
+    <form #myform="ngForm" class="form form-login">
+      <div class="form-field">
+        <label for="login-email"><span class="hidden">UserName</span></label>
+        <input name="email" id="login-email" type="email" class="form-input" placeholder="Email" required ngModel>
       </div>
-      <div class="mb-3">
-        <label for="LoginRole" class="form-label">LoginRole</label>
-        <input type="text" class="form-control" name="LoginRole"  >
+
+      <div class="form-field">
+        <label for="login-password"><span class="hidden">Password</span></label>
+        <input name="password" id="login-password" type="password" class="form-input" placeholder="Password" required ngModel>
       </div>
-    
-    <button type="submit" class="btn btn-primary">Login</button>
-  </form>
+      <div class="form-field">
+        <label  for="login-role"><span class="hidden">Role</span></label>
+        <input name="password" id="login-role" type="text" class="form-input" placeholder="role" required ngModel>
+      </div>
+
+      <div class="form-field">
+        <button type="submit" value="Log in">Login</button>
+      </div>
+    </form>
+ 
+</div>
+<div class="container">
+  <table class="table-hover bg-white text-success table-striped">
+      <tr>
+          <th>Team ID</th>
+          <th>Team Name</th>
+          <th>Owner</th>
+       
+          
+          
+      </tr>
+      <tr *ngFor="let p of objs.list">
+  
+          <td >{{p.UserName}}</td>
+          <td >{{p.UserPwd}}</td>
+          <td >{{p.Lrole}}</td>
+          
+          
+        
+          
+      </tr>
+  </table>
+  </div>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import{FormGroup,FormControl} from '@angular/forms';
+import { LoginService } from '../sharedlogin/login.service';
+
 
 @Component({
   selector: 'app-login',
@@ -8,9 +11,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public objs:LoginService) { }
 
   ngOnInit(): void {
+    this.objs.loginList();
   }
+      
+
+  
+            
 
 }

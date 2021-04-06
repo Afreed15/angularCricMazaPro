@@ -9,9 +9,9 @@ export class LoginService {
   readonly ourUrl='https://localhost:44321/api';
   list: Login[];
   constructor(private objhttp:HttpClient) { }
-  TeamsList()
+  loginList()
   {
-  this.objhttp.get(this.ourUrl+'/login/').toPromise().then
-  (t=>this.list=t as Login[]);
+  this.objhttp.get(this.ourUrl+'/logins/').toPromise().then
+  (l=>this.list=l as Login[]);
   }
 }
