@@ -8,6 +8,9 @@ import { PlayersComponent } from './players/players.component'
 import { PointsTableComponent } from './points-table/points-table.component';
 import { PlayersProfileComponent } from './players-profile/players-profile.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { NavigationComponent } from './navigation/navigation.component';
     PlayersComponent,
     PointsTableComponent,
     PlayersProfileComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

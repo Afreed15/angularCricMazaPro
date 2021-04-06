@@ -1,1 +1,24 @@
 <p>teams works!</p>
+
+<div class="container">
+<table class="table-hover bg-white text-success table-striped">
+    <tr>
+        <th>Team ID</th>
+        <th>Team Name</th>
+        <th>Owner</th>
+        <th>logo</th>
+        
+        
+    </tr>
+    <tr *ngFor="let p of objs.list">
+
+        <td >{{p.Tid}}</td>
+        <td >{{p.Tname}}</td>
+        <td >{{p.Towner}}</td>
+        
+        
+      
+        
+    </tr>
+</table>
+</div>

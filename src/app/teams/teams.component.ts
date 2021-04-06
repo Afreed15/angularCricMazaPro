@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamsService } from '../TeamsShared/teams.service';
+
 
 @Component({
   selector: 'app-teams',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public objs:TeamsService) { }
+   
   ngOnInit(): void {
+    this.objs.TeamsList();
   }
 
 }
