@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayersService } from '../sharedPlayers/players.service';
 
 @Component({
   selector: 'app-players',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public objs:PlayersService) { }
 
   ngOnInit(): void {
+    this.objs.PlayersList()
   }
 
 }

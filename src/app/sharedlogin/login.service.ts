@@ -14,4 +14,5 @@ export class LoginService {
   this.objhttp.get(this.ourUrl+'/logins/').toPromise().then
   (l=>this.list=l as Login[]);
   }
+  
 }
